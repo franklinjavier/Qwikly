@@ -9,8 +9,8 @@ export async function onGet(event: RequestEvent) {
     .eq('link', link)
 
   if (!data?.length || error) {
-    throw event.redirect(302, '/')
+    throw event.redirect(301, '/')
   }
 
-  throw event.redirect(302, data?.[0].destination)
+  throw event.redirect(301, data?.[0].destination)
 }

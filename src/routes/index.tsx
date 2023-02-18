@@ -22,7 +22,7 @@ export const useShortAction = action$(async (data) => {
     : `https://${data.destination}`
 
   await supabase.from('shorts').insert({ link, destination })
-  // throw event.redirect(302, `/shorts/${link}`)
+  // throw event.redirect(301, `/shorts/${link}`)
   return {
     link,
     destination,

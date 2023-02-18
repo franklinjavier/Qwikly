@@ -11,7 +11,7 @@ export const useShort = loader$(async (event) => {
     .eq('link', link)
 
   if (!data?.length || error) {
-    throw event.redirect(302, '/')
+    throw event.redirect(301, '/')
   }
   return data?.[0]
 })
