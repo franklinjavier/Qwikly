@@ -85,7 +85,7 @@ export default component$(() => {
       </div>
 
       <div class="mt-10 border-t-2">
-        <h3 class="my-4 text-lg font-medium">Latest links created</h3>
+        <h3 class="my-4 text-lg font-medium">Last created links</h3>
         <div class="flex gap-2 flex-wrap">
           {shorts.value.map((short) => (
             <a
